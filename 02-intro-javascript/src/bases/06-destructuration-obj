@@ -1,0 +1,41 @@
+// Desestructuracion
+// Asignacion Desestructurante
+
+
+
+// const { nombre, edad, clave } = persona;
+
+// console.log( nombre );
+// console.log( edad );
+// console.log( clave );
+
+// console.log( persona.edad );
+// console.log( persona.clave );
+
+
+const persona = {
+    nombre: "Tony",
+    edad: 45,
+    clave: "Ironman"
+};
+
+
+const usecheck = ( { clave,nombre, edad, rango = "Capitán" } ) => {
+
+    // console.log( nombre, edad, rango);
+
+    return {
+        nombreClave: clave,
+        años: edad,
+        latlng: {
+            lat: 1486567,
+            lng: -18.12365
+        }
+    }
+
+}
+
+const { nombreClave, años, latlng:{ lat, lng } } = usecheck( persona );
+
+console.log( nombreClave, años );
+console.log( lat, lng );
