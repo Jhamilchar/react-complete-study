@@ -9,7 +9,7 @@ export const todoReducer = ( initialState = [], action ) => {
 
     case "Remove Todo":
       return initialState.filter( todo => todo.id !== action.payload );
-
+    
     case "Toggle Todo":
       return initialState.map( todo =>{
 

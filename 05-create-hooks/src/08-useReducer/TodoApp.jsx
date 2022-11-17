@@ -13,7 +13,7 @@ const initialState = [
 ];
 
 const init = () => {
-  return JSON.parse( localStorage.getItem("todos") || [] );
+  return JSON.parse( localStorage.getItem( "todos" )) || [] ;
 }
 
 export const TodoApp = () => {
@@ -41,12 +41,22 @@ export const TodoApp = () => {
       payload: id
     });
 
-  const handleToggleTodo = ( id ) => {
-    dispatch({
-      type: "Remove Todo",
-      payload: id
-    });
-  }
+    // const handleToggleTodo = ( id ) => {
+    //   dispatch({
+    //     type: "Toggle Todo",
+    //     payload: id
+    //   });
+    // }
+
+  
+
+
+  // const handleToggleTodo = ( id ) => {
+  //   dispatch({
+  //     type: "Toggle Todo",
+  //     payload: id
+  //   });
+  // }
 
   }
 
@@ -61,7 +71,8 @@ export const TodoApp = () => {
           <TodoList
             todos={ todos }
             onDeleteTodo={ handleDeleteTodo }
-            onToggleTodo={ handleToggleTodo }
+            // onToggleTodo={ handleToggleTodo }
+            // onToggleTodo={ handleToggleTodo }
           />
 
         </div>
