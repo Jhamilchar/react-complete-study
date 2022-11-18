@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 // import { TodoApp } from './08-useReducer/TodoApp'
 import { MainApp } from './09-useContext/MainApp'
 //import { MemoHook } from './06-memos/MemoHook'
-//import { SimpleForm } from './02-useEffect/SimpleForm'
+//import { Simple   Form } from './02-useEffect/SimpleForm'
 //import { CounterApp } from './01-use-state/CounterApp'
 //import { CounterWithCustomHook } from './01-use-state/CounterWithCustomHook'
 //import { HooksApp } from './HooksApp'
