@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 //import { CallbackHook } from './06-memos/CallbackHook'
 // import { TodoApp } from './08-useReducer/TodoApp'
 import { MainApp } from './09-useContext/MainApp'
+import { NavBar } from './09-useContext/NavBar';
 //import { MemoHook } from './06-memos/MemoHook'
 //import { Simple   Form } from './02-useEffect/SimpleForm'
 //import { CounterApp } from './01-use-state/CounterApp'
@@ -21,7 +22,7 @@ import { MainApp } from './09-useContext/MainApp'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>  
+  <BrowserRouter>
     {/* ///<React.StrictMode> */}
       <MainApp />
     {/* //</React.StrictMode> */}
