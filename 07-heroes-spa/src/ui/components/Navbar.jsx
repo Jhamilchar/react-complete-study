@@ -6,8 +6,16 @@ export const Navbar = () => {
     const navigate = useNavigate();
 
 
-    const onLogout = () => {
-        navigate("/login", {
+    // const onLogout = () => {
+    //     navigate("/login", {
+    //         replace: true
+    //     });
+    // }
+
+    const handleClick = () => {
+        localStorage.clear();
+        window.location.reload();
+        navigate('/src/auth/pages/LoginPage.jsx', {
             replace: true
         });
     }
@@ -59,7 +67,7 @@ export const Navbar = () => {
 
                     <button
                         className='nav-item nav-link btn'
-                        onClick={ onLogout }
+                        onClick={ handleClick }
                     >
                         Logout
                     </button>
